@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCycle Pro | Waste Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i> EcoCycle<span>Pro</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <!-- Removed Schedule Pickup Button -->
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="register.html" class="btn btn-primary">Register</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInDown">Smart Waste Management Solutions</h1>
+                <p class="animate__animated animate__fadeInDown animate__delay-1s">Turn your waste into wealth with our efficient recycling platform</p>
+                <div class="hero-actions animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="#calculator" class="btn btn-accent">Calculate Earnings</a>
+                    <a href="register.html" class="btn btn-outline-white">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image animate__animated animate__fadeInRight animate__delay-1s">
+                <img src="./photos/waste.jfif" alt="Waste Recycling">
+            </div>
+        </div>
+    </section>
+
+    <!-- Waste Calculator Section -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <h2 class="section-title">Estimate Your Earnings</h2>
+            <p class="section-subtitle">Enter the quantity of materials you have to calculate potential earnings</p>
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label for="waste-type">Waste Type</label>
+                    <select id="waste-type" class="form-control">
+                        <option value="">Select Waste Type</option>
+                        <option value="plastic">Plastic</option>
+                        <option value="paper">Paper</option>
+                        <option value="metal">Metal</option>
+                        <option value="glass">Glass</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="waste-quantity">Quantity (kg)</label>
+                    <input type="number" id="waste-quantity" class="form-control" min="1" placeholder="Enter quantity">
+                </div>
+                <button id="calculate-btn" class="btn btn-accent">Calculate</button>
+                <div class="calculation-result">
+                    <div class="result-box">
+                        <span>Estimated Value:</span>
+                        <span id="estimated-value">₹0</span>
+                    </div>
+                    <!-- Redirect to Schedule Pickup Page -->
+                    <a href="schedule-pickup.html" id="schedule-pickup-btn" class="btn btn-primary">Schedule Pickup</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive waste management solutions</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                    <h3>Waste Collection</h3>
+                    <p>Convenient scheduled pickup for your recyclable materials</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Instant Payment</h3>
+                    <p>Get paid immediately through multiple payment options</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Tracking & Reporting</h3>
+                    <p>Real-time tracking of your waste and earnings history</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>Contribute to environmental conservation efforts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Current Prices</h2>
+            <p class="section-subtitle">Competitive rates for your recyclable materials</p>
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Price per kg</th>
+                            <th>Minimum Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Plastic Bottles</td>
+                            <td>₹18 - ₹25</td>
+                            <td>5 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Mixed Paper</td>
+                            <td>₹12 - ₹15</td>
+                            <td>10 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Aluminum Cans</td>
+                            <td>₹45 - ₹60</td>
+                            <td>2 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Copper</td>
+                            <td>₹400 - ₹550</td>
+                            <td>1 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Glass</td>
+                            <td>₹8 - ₹12</td>
+                            <td>15 kg</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Have questions? Get in touch with our team</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+91 7904811925</p>
+                            <p>Mon-Sat: 9AM to 6PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>eikjasalikhanm@gmail.com</p>
+                            <p>Response within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>Shevapet</p>
+                            <p>Salem, India - 636002</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-materials">
+                    <h3>Materials We Accept</h3>
+                    <ul>
+                        <li><a href="#">Plastics</a></li>
+                        <li><a href="#">Paper</a></li>
+                        <li><a href="#">Metals</a></li>
+                        <li><a href="#">Glass</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EcoCycle Pro. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
